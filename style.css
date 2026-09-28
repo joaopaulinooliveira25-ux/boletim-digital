@@ -1,0 +1,142 @@
+/* Reseta margens padrão e define o tipo de fonte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fundo geral escuro e estilos básicos */
+body {
+    background-color: #0f0f14;
+    color: #e0e0e0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Container centralizado limitando a largura */
+.container {
+    width: 100%;
+    max-width: 1100px;
+}
+
+/* Cabeçalho estilizado com tom roxo */
+.cabecalho {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a24;
+    border-radius: 12px;
+    border: 2px solid #8a2be2;
+    margin-bottom: 25px;
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.3);
+}
+
+.cabecalho h1 {
+    color: #a855f7;
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    color: #a1a1aa;
+    font-size: 1rem;
+}
+
+/* Organização dos Cards de Resumo */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+/* Estilo dos Cards com bordas arredondadas e detalhe roxo brilhante */
+.card {
+    background-color: #12121a;
+    padding: 18px;
+    border-radius: 12px;
+    /* Borda e sombra com roxo bem brilhante */
+    border: 2px solid #a855f7;
+    box-shadow: 0 0 12px rgba(168, 85, 247, 0.5);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.8);
+}
+
+.card h3 {
+    font-size: 0.9rem;
+    color: #c084fc;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.valor-card {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.subtexto-card {
+    display: block;
+    font-size: 0.75rem;
+    color: #4ade80;
+    margin-top: 5px;
+}
+
+/* Seção e Tabela Responsiva */
+.tabela-secao {
+    background-color: #12121a;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid #27272a;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Permite rolagem lateral na tabela se a tela do celular for pequena */
+.tabela-wrapper {
+    overflow-x: auto;
+}
+
+.tabela-boletim {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    min-width: 650px;
+}
+
+.tabela-boletim th, 
+.tabela-boletim td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #27272a;
+}
+
+.tabela-boletim th {
+    background-color: #1e1e2d;
+    color: #c084fc;
+    font-weight: 600;
+}
+
+.tabela-boletim tbody tr:hover {
+    background-color: #1a1a28;
+}
+
+/* Estilos de destaques para situações */
+.situacao-bom {
+    color: #4ade80;
+    font-weight: bold;
+}
+
+.situacao-atencao {
+    color: #f87171;
+    font-weight: bold;
+}
+
+.situacao-indisponivel {
+    color: #a1a1aa;
+    font-style: italic;
+}
